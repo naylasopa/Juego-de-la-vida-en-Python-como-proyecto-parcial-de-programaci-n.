@@ -89,7 +89,7 @@ if st.session_state.running:
     st.session_state.grid = next_generation(st.session_state.grid)
     st.rerun()
 
-#Explicacion rapida:
-#session_state: guarda el tablero porque Streamlit se vuelve a ejecutar completo con cada clic.
-#st.rerun(): es lo que hace que la animación avance sola.
-#next_generation: viene del archivo de mi compañera que es A.
+#Explicacion rapida de algunos conceptos "nuevos" que estuvimos aprendiendo
+#1.session_state: guarda el tablero porque Streamlit se vuelve a ejecutar completo con cada clic.
+#2.st.rerun(): es lo que hace que la animación avance sola.
+#3.next_generation: viene del archivo de mi compañera que es A.
