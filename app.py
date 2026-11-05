@@ -1,7 +1,7 @@
 import streamlit as st
 import numpy as np
 import matplotlib.pyplot as plt
-from game_of_life import update, N, ON, OFF
+from game_logic import update, N, ON, OFF
 
 # Título de la aplicación en la web
 st.title("🦠 Juego de la Vida de Conway")
