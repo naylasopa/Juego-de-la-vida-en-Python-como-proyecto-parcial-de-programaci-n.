@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 from game_logic import update, N, ON, OFF
 
 # Título de la aplicación en la web
-st.title("🦠 Juego de la Vida de Conway")
+st.title(" Juego de la Vida de Conway")
 st.write("Simulación de autómatas celulares desarrollada con Python y Streamlit.")
 
 # 1. Inicializar el estado del tablero en la memoria de Streamlit (session_state)
