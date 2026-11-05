@@ -92,7 +92,7 @@ if not st.session_state.running:
         )
         # Al dar clic, convertimos las casillas de vuelta a 1 y 0 y actualizamos el tablero
         if st.button("Aplicar cambios"):
-            st.session_state.grid = np.where(editado.to_numpy(), ON, OFF)
+            st.session_state.grid = np.where(editado, ON, OFF)
             st.rerun()
 
 # 5. Animacion automatica
