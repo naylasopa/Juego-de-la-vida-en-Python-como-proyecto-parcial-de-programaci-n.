@@ -41,7 +41,7 @@ def step():
 
 def clear():
     st.session_state.running = False
-    st.session_state.grid = np.full((N, N), OFF)
+    st.session_state.grid = np.random.choice([ON, OFF], size = (N, N), p = [0.2, 0.8])
     
 # Botones de control en el panel lateral izquierdo
 st.sidebar.header("Controles de Simulación")
