@@ -54,6 +54,11 @@ Funciones implementadas:
 • Evolucion correcta del automata celular.
 • Interfaz web interactiva para manipular el juego.
 • Visualizacion grafica con colores distintivos para celulas vivas y muertas.
+
+Capturas
+![Captura del tablero](image.png)
+![Captura de la simulación](image (1).png)
+![Captura de la interfaz](image (2).png)
 • Contador de generaciones. 
 Limitaciones conocidas:
 • El tablero tiene un tamaño fijo establecido en el codigo (por defecto 10x10 o 30x30 segun la configuracion).
@@ -61,4 +66,3 @@ Limitaciones conocidas:
 • La simulacion se reinicia si se recarga la pagina web.
 
 
-.nn
