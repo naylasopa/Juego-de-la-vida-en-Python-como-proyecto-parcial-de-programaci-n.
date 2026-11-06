@@ -17,7 +17,7 @@ st.write("Simulación de autómatas celulares desarrollada con Python y Streamli
 #'grid' es el tablero
 if "grid" not in st.session_state:
     # Creamos un tablero inicial con algunas células vivas de ejemplo o aleatorias
-    st.session_state.grid = np.full((N, N), OFF)
+    st.session_state.grid = np.random.choice([ON, OFF], size = (N, N), p = [0.2, 0.8])
 
 #'running' nos va a indicar si la animacion automatica esta activada o no
 if "running" not in st.session_state:
@@ -41,7 +41,7 @@ def step():
 
 def clear():
     st.session_state.running = False
-    st.session_state.grid = np.random.choice([ON, OFF], size = (N, N), p = [0.2, 0.8])
+    st.session_state.grid = np.full((N, N), OFF)
     
 # Botones de control en el panel lateral izquierdo
 st.sidebar.header("Controles de Simulación")
